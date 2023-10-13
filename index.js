@@ -4,9 +4,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/genMarkdown');
-
-// i need to make a template literal for the part below and use backticks.
-
 // promt the user with questions
 function promptUser() {
     console.log('here')
@@ -60,8 +57,8 @@ function promptUser() {
             }
         ])
         .then((answer) => {
-            console.log(answer)            
-            writeToFile('.\\Output\\ReadMe.md',generateMarkdown(answer))
+            console.log(answer)
+            writeToFile('.\\Output\\ReadMe.md', generateMarkdown(answer))
         })
         .catch((error) => {
             if (error.isTtyError) {
@@ -71,27 +68,23 @@ function promptUser() {
             };
         });
 }
-
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => { 
-        if (err) 
-          console.log(err); 
-        else { 
-          console.log("File written successfully\n"); 
-          console.log("The written has the following contents:"); 
-          console.log(fs.readFileSync(fileName, "utf8")); 
-        } 
-      }); 
-    
+    fs.writeFile(fileName, data, (err) => {
+        if (err)
+            console.log(err);
+        else {
+            console.log("File written successfully\n");
+            console.log("The written has the following contents:");
+            console.log(fs.readFileSync(fileName, "utf8"));
+        }
+    });
 
- }
 
+}
 // TODO: Create a function to initialize app
 function init() {
     promptUser()
 }
-
 // Function call to initialize app
 init();
