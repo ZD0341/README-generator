@@ -1,4 +1,4 @@
-function generateMarkdown(data) {
+const  generateMarkdown = (data) => {
     return `
   # ${data.projectName}
   
