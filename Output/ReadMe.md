@@ -1,8 +1,8 @@
 
-  # readme gen
+  # Note Taker
   
   ## Description
-  your desc
+  Note Taker that can be used to write and save notes.
   
   ## Table of Contents
   - [Installation](#installation)
@@ -13,19 +13,19 @@
   - [Questions](#questions)
   
   ## Installation
-  the right way
+  npm install
   
   ## Usage
-  correctly
+   after saving notes, you can go back and edit them or you have the option to delete.
   
   ## License
   This project is licensed under the License1 License.
   
   ## Contributing
-  n/a
+  fork the repo, create a new branch
   
   ## Tests
-  n/a
+  try to save a note and delete it
   
   ## Questions
   If you have any questions, you can reach out to [zd0341](https://github.com/zd0341) or contact via email at zechiel97@yahoo.com.
